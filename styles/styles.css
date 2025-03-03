@@ -125,6 +125,11 @@ body {
     background: #fff;
 }
 
+.social-btn-icon {
+    width: 19px;
+    height: 19px;
+}
+
 .form-footer-color {
     background: #46a358;
     position: absolute;
