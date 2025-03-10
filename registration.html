@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles-reg.css">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="reg-form-container">
+        <button class="close-btn">X</button>
+        <div class="log-reg-tag-block">
+            <button class="login-btn">Login</button>
+            <span>|</span>
+            <button class="reg-btn">Registration</button>
+        </div>
+        <div>
+            <p class="reg-form-text-hint">Enter your email and password to register.</p>
+            <form action="">
+                <div class="form-cell">
+                    <input 
+                    type="text" 
+                    placeholder="Username"
+                    required>
+                </div>
+                <div class="form-cell">
+                    <input 
+                    type="email" 
+                    placeholder="Enter your email address"
+                    required>
+                </div>
+                <div class="form-cell" id="form-password-cell">
+                    <input 
+                    type="password" 
+                    placeholder="Password"
+                    required>
+                    <img src="./img/eye-off-thin.svg" alt="eye">                    
+                </div>
+                <div class="form-cell">
+                    <input 
+                    type="password" 
+                    placeholder="Confirm Password"
+                    required>
+                </div>
+                <button type="submit" class="reg-form-reg-btn">Register</button>
+                <div class="social-block-hint">
+                    <p class="reg-form-text-hint">Or register with</p>
+                </div>
+                <button type="button" class="social-btn">
+                    <span>
+                        <img class="social-btn-icon" src="./img/google-icon-logo-svgrepo-com.svg" alt="Google">
+                    </span>
+                    <span>
+                        Continue with Google
+                    </span>
+                </button>
+                <button type="button" class="social-btn">
+                    <span>
+                        <img class="social-btn-icon" src="./img/facebook-2-logo-svgrepo-com.svg" alt="Facebook">
+                    </span>
+                    <span>
+                        Continue with Facebook
+                    </span>
+                </button>              
+            </form>
+        </div>
+        <div class="form-footer-color"></div>
+    </div>
+</body>
+</html>

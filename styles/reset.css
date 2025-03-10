@@ -35,7 +35,7 @@ body {
   line-height: inherit;
 }
 
-ol, ul {
+ol, ul, nav {
   list-style: none;
 }
 
@@ -78,32 +78,6 @@ button {
 
   /* Corrects inability to style clickable `input` types in iOS */
   appearance: none;
-}
-
-button::-moz-focus-inner {
-  /* Remove excess padding and border in Firefox 4+ */
-  border: 0;
-  padding: 0;
-}
-
-/* safari requires some special resets for input type="search" */
-input[type="search"] {
-  -webkit-appearance: textfield;
-}
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/* ie 11 has it's own magic font-size rules for sub and sup */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  sub, sup {font-size:120%;}
-}
-
-/* some sensible global styles */
-:root {
- /* prevents mobile browsers from sometimes scaling text */
-  text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 }
 
 /* sets box-sizing back to the sane border-box for all elements */
