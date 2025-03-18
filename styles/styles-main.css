@@ -438,8 +438,6 @@ header {
     background-color: #FBFBFB;
     overflow: hidden;
     text-align: left;
-    display: flex;
-    flex-direction: column;
     flex: 0 1 calc(25% - 22.5px);
 }
 
