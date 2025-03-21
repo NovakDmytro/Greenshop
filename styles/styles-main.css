@@ -48,6 +48,9 @@ header {
     font-family: 'Cera Pro Regular', sans-serif;
     color: #3D3D3D;
     font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    transition: .2s;
 }
 
 .list-item.active {
@@ -59,6 +62,50 @@ header {
 .list-item:hover {
     background-color: #46A358;
     color: #FFF;
+}
+
+.sub-list,
+.sub-sub-list {
+    display: none;
+    position: absolute;
+    min-width: 188px;
+    z-index: 100;
+    transition: .2s;
+}
+
+.dropdown:hover .sub-list {
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+}
+
+.sub-list li {
+    position: relative;
+}
+
+.sub-list li a, .sub-sub-list li a {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    color: #3D3D3D;
+    background-color: #EDF6EE;
+    font-family: 'Cera Pro Regular', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.sub-list li a:hover, .sub-sub-list li a:hover {
+    background-color: #46A358;
+    color: #FFF;
+}
+
+.lower-level-dropdown:hover .sub-sub-list {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 100%;
 }
 
 .cta {
