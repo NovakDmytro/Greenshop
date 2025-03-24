@@ -595,16 +595,37 @@ header {
     gap: 10px;
 }
 
-.service img {
-    width: 120px;
-    height: auto;
+.serv-1 {
+    background-image: url('../img/serv1.png');
+    width: auto;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;  
+}
+
+.serv-2 {
+    background-image: url('../img/serv2.png');
+    width: auto;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;  
+}
+
+.serv-3 {
+    background-image: url('../img/serv3.png');
+    width: auto;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;  
 }
 
 .service h3 {
     color: #3D3D3D;
     font-family: "Cera Pro Bold", sans-serif;
     font-size: 17px;
-
 }
 
 .service p {
