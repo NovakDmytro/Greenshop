@@ -115,10 +115,11 @@ header {
     font-size: 16px;
     font-weight: 500;                
     border-radius: 6px;
-    background: #46A358;
+    background: #46A358;   
+}
+
+.cta a {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 4px;
 }
 
@@ -772,4 +773,163 @@ header {
     font-family: 'Cera Pro Regular', sans-serif;
     font-size: 14px;
     color: #3D3D3D;
+}
+
+/* Animation */
+
+@keyframes bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1.05); }
+}
+
+.cta:hover, .shop-now-btn:hover, .product-card:hover, .product-card svg:hover, .page-btn:hover, .find-more-btn:hover {
+    animation: bounce 0.3s ease forwards;
+}
+
+/* Registration Form */
+
+.log-reg-tag-block {
+    font-family: Cera Pro Regular, sans-serif;
+    display: block;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto 40px auto;
+}
+
+.log-reg-tag-block > button {
+    background: none;
+    border: none;
+}
+
+.log-reg-tag-block > span {
+    color: #3d3d3d;
+}
+
+.login-btn {
+    color: #3d3d3d;
+}
+
+.reg-btn {
+    color: #46a358;
+}
+
+.reg-form-container {
+    width: 500px;
+    height: 656px;
+    position: relative;
+    padding: 45px 100px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.reg-form-text-hint {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 123%;
+    color: #3d3d3d;
+    margin-bottom: 14px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 13px;
+    top: 13px;
+    border: none;
+    background: none;
+    color: #46a358;
+}
+
+.form-cell {
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    align-content: center;
+    display: block;
+    margin-bottom: 16px;
+    padding-left: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #fff;
+}
+
+.form-cell > input {
+    border: none;
+}
+
+.form-cell > input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    color: #a5a5a5;
+}
+
+#form-password-cell {
+    position: relative;
+}
+
+#form-password-cell > img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.social-block-hint {
+    width: fit-content;
+    margin: 0 auto 27px auto;
+}
+
+.reg-form-reg-btn {
+    border-radius: 5px;
+    width: 300px;
+    height: 45px;
+    background: #46a358;
+    font-family: Cera Pro Bold, sans-serif;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 36px;
+}
+
+.social-btn {
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    background: none;
+    margin-bottom: 15px;
+    background: #fff;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.social-btn-icon {
+    width: 19px;
+    height: 19px;
+}
+
+.form-footer-color {
+    background: #46a358;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: 10px;
+}
+
+.background-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(60, 76, 63, 0.2);
+    z-index: -10;
 }
