@@ -244,16 +244,46 @@ header {
 }
 
 .category-item {
-    font-family: 'Cera Pro Regular', sans-serif;
-    font-size: 16px;
-    color: #3D3D3D;
     padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.category-item input[type="checkbox"] {
+    display: none;
+}
+
+.category-item label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     cursor: pointer;
 }
 
-.category-item.active {
+.category-item .category-name {
+    font-family: 'Cera Pro Regular', sans-serif;
+    font-size: 16px;
+    color: #3D3D3D;
+    transition: color 0.3s ease, font-family 0.3s ease;
+}
+
+.category-item .count {
+    color: #727272;
+    font-size: 16px;
+    font-family: 'Cera Pro Regular', sans-serif;
+    transition: color 0.3s ease, font-family 0.3s ease;
+}
+
+.category-item input[type="checkbox"]:checked + label .category-name,
+.category-item input[type="checkbox"]:checked + label .count {
     color: #46A358;
     font-family: 'Cera Pro Bold', sans-serif;
+}
+
+.category-item label:hover .category-name,
+.category-item label:hover .count {
+    color: #46A358;
 }
 
 .category-item:hover {
