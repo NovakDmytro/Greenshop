@@ -990,3 +990,129 @@ header {
     background-color: rgba(60, 76, 63, 0.2);
     z-index: -10;
 }
+
+@media (min-width: 1024px) {
+    header {
+        padding: 30px 80px;
+    }
+
+    .welcome-section {
+        padding: 0 80px;
+    }
+
+    .welcome-section-container {
+        gap: 70px;
+    }
+
+    .welcome-title {
+        font-size: 60px;
+    }
+
+    .products-section {
+        padding: 40px 80px;
+    }
+
+    .products-section-container {
+        gap: 25px;
+    }
+
+    .sidebar {
+        min-width: 280px;
+    }
+
+    .product-grid {
+        gap: 25px;
+    }
+
+    .product-card img {
+        max-width: 200px;
+    }
+
+    .featured-posts-section {
+        padding: 40px 80px;
+    }
+
+    .featured-posts-container {
+        gap: 25px;
+    }
+
+    .featured-post img {
+        width: 260px;
+        height: 270px;
+    }
+
+    .blog-posts-section {
+        padding: 40px 80px;
+    }
+
+    .blog-card {
+        flex: 0 1 calc(50% - 15px);
+    }
+
+    .newsletter-section {
+        padding: 0 80px;
+    }
+
+    .footer {
+        padding: 40px 80px;
+    }
+}
+
+@media (min-width: 1440px) {
+    header {
+        padding: 30px 140px;
+    }
+
+    .welcome-section {
+        padding: 0 140px;
+    }
+
+    .welcome-section-container {
+        gap: 110px;
+    }
+
+    .welcome-title {
+        font-size: 80px;
+    }
+
+    .products-section {
+        padding: 40px 140px;
+    }
+
+    .products-section-container {
+        gap: 35px;
+    }
+
+    .sidebar {
+        min-width: 340px;
+    }
+
+    .product-card img {
+        max-width: 240px;
+    }
+
+    .featured-posts-section {
+        padding: 40px 140px;
+    }
+
+    .featured-post img {
+        width: 310px;
+        height: 310px;
+    }
+
+    .blog-posts-section {
+        padding: 40px 140px;
+    }
+
+    .blog-card {
+        flex: 0 1 calc(25% - 26.25px);
+    }
+
+    .newsletter-section {
+        padding: 0 140px;
+    }
+
+    .footer {
+        padding: 40px 140px;
+    }
+}
