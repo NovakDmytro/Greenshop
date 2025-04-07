@@ -1020,6 +1020,10 @@ header {
         min-width: 280px;
     }
 
+    .tab-bar {
+        gap: 5px;
+    }
+
     .product-grid {
         gap: 25px;
     }
